@@ -1,0 +1,2 @@
+# add a new column to the joined tables representing the sum of Property, Violence, and Firearm crime rates in each NY county
+wr2 <- cleantbl %>% mutate(prop_vio_fire = PROPERTY_RATE + VIOLENT_RATE + FIREARM_RATE)

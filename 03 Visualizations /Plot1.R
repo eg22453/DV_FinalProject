@@ -1,0 +1,3 @@
+# plots the number of DWI misdemeanors against county population, and color codes the data
+# with respect to year. Applies a linear fit to the data with respect to year.
+wr1 %>% ggplot(aes(x=DWI_MISD, y=POPULATION, color=factor(YEAR))) + geom_point() + stat_smooth(method="lm", se=FALSE) + facet_wrap(~YEAR) + ylim(c(0,150000)) + theme(legend.position="none", plot.title = element_text(size=16, face="bold", vjust=2, family="Helvetica Neue Light")) + labs(x="Number of DWI Misdemeanor Arrests", y = "County Population") + ggtitle("DWI Misdemeanor Arrests vs NY County Population by Year")
