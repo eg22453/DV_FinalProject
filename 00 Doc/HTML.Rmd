@@ -44,7 +44,7 @@ source("../01 Data/DataFramShow.R", echo=TRUE, max.deparse.length=1e3)
 Now that we have the three tables loaded into Rstudio, we can now join the tables. We join all three tables by first joining any two tables based on the commmon 'COUNTY' and 'YEAR' columns, placing that table into a temporary data frame, and then joining the temporary data frame with the third table. We do this operation twice, once for a full-join, and another time for an inner-join. We also make use of the complete.cases function for the final tables in order to remove any NA values in rows. We also convert the types of some of the columns to the numerical format, using the as.numeric() function, to make faciliate plotting this data.
 
 ```{r, warning=FALSE}
-source("../01 Data/DataFrameJoin.R", echo=TRUE, max.deparse.length=1e3)
+source("../01 Data/CrimeDataFrameJoin.R", echo=TRUE, max.deparse.length=1e3)
 
 ```
 
