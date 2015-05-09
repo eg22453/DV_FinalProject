@@ -1,0 +1,1 @@
+st3 %>% ggplot(aes(x=LON, y=LAT, color=mean)) + geom_point() + coord_equal() + scale_color_gradient(high="red", low="green", name="Mean percentage\nobese or overweight") + facet_wrap(~SCHOOL_YEARS) + labs(x="Longitude", y = "Latitude")

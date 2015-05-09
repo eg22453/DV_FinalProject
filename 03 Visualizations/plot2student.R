@@ -1,0 +1,1 @@
+st2 %>% ggplot(aes(x=REGION, y=PCT_OVERWEIGHT_OR_OBESE)) + geom_point() + facet_wrap(~GRADE_LEVEL) + geom_violin(alpha=0.3, color="gray") + facet_grid(GRADE_LEVEL~SCHOOL_YEARS) + labs(x="Region", y = "Percent Overweight or Obese") + theme(axis.text.x=element_text(angle=45, vjust=0.5))
