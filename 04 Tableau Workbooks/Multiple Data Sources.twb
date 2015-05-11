@@ -5,6 +5,857 @@
   <preferences>
   </preferences>
   <datasources>
+    <datasource caption='Adult_Arrests_by_County___Beginning_1970' inline='true' name='textscan.42134.491632511600' version='8.3'>
+      <connection class='textscan' directory='/Users/bruno/Dropbox/CS 329 Data' filename='Adult_Arrests_by_County___Beginning_1970.csv'>
+        <relation name='Adult_Arrests_by_County___Beginning_1970#csv' table='[Adult_Arrests_by_County___Beginning_1970#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='County' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='integer' name='Total' ordinal='2' />
+            <column datatype='integer' name='Felony_Total' ordinal='3' />
+            <column datatype='integer' name='Drug_Felony' ordinal='4' />
+            <column datatype='integer' name='Violent_Felony' ordinal='5' />
+            <column datatype='integer' name='DWI_Felony' ordinal='6' />
+            <column datatype='integer' name='Other_Felony' ordinal='7' />
+            <column datatype='integer' name='Misdemeanor_Total' ordinal='8' />
+            <column datatype='integer' name='Drug_Misd' ordinal='9' />
+            <column datatype='integer' name='DWI_Misd' ordinal='10' />
+            <column datatype='integer' name='Property_Misd' ordinal='11' />
+            <column datatype='integer' name='Other_Misd' ordinal='12' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false'>
+        </refresh>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>Total</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Felony_Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Felony_Total]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>Felony_Total</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drug_Felony</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Drug_Felony]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>Drug_Felony</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Violent_Felony</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Violent_Felony]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>Violent_Felony</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DWI_Felony</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DWI_Felony]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>DWI_Felony</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other_Felony</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other_Felony]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>Other_Felony</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Misdemeanor_Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Misdemeanor_Total]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>Misdemeanor_Total</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drug_Misd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Drug_Misd]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>Drug_Misd</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DWI_Misd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DWI_Misd]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>DWI_Misd</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property_Misd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Property_Misd]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>Property_Misd</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other_Misd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other_Misd]</local-name>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias>Other_Misd</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name></remote-name>
+            <remote-type>0</remote-type>
+            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
+            <remote-alias></remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='record-delimiter'>&quot;\\r&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+      </column>
+      <column caption='DWI Felony' datatype='integer' name='[DWI_Felony]' role='measure' type='quantitative'>
+      </column>
+      <column caption='DWI Misd' datatype='integer' name='[DWI_Misd]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Drug Felony' datatype='integer' name='[Drug_Felony]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Drug Misd' datatype='integer' name='[Drug_Misd]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Felony Total' datatype='integer' name='[Felony_Total]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Misdemeanor Total' datatype='integer' name='[Misdemeanor_Total]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Other Felony' datatype='integer' name='[Other_Felony]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Other Misd' datatype='integer' name='[Other_Misd]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Property Misd' datatype='integer' name='[Property_Misd]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Violent Felony' datatype='integer' name='[Violent_Felony]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative'>
+      </column>
+      <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+      <column-instance column='[DWI_Felony]' derivation='Sum' name='[sum:DWI_Felony:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Drug_Felony]' derivation='Sum' name='[sum:Drug_Felony:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='/Users/bruno/Dropbox/UT Stuff/SP15/CS 329E/DataVisualization/DV_FinalProject/04 Tableau Workbooks/Adult_Arrests_by_County___Beginning_1970.tde' schema='Extract' tablename='Extract' update-time='05/11/2015 08:44:02 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='2801' timestamp-start='2015-05-11 20:44:02.069' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Albany&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Yates&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DWI_Felony</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[DWI_Felony]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DWI_Felony</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>337</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>615</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DWI_Misd</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[DWI_Misd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DWI_Misd</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1200</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>9030</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Drug_Felony</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Drug_Felony]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Drug_Felony</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>741</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>18455</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Drug_Misd</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Drug_Misd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Drug_Misd</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>819</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>31608</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Felony_Total</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Felony_Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Felony_Total</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1448</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>7</statistic>
+                <statistic aggregation='Max' datatype='integer'>48853</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Misdemeanor_Total</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Misdemeanor_Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Misdemeanor_Total</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2075</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>77376</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>7</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other_Felony</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Other_Felony]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other_Felony</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1146</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>17140</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other_Misd</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Other_Misd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other_Misd</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1519</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>25515</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Property_Misd</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Property_Misd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Property_Misd</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1402</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>35851</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2170</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>13</statistic>
+                <statistic aggregation='Max' datatype='integer'>114499</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Violent_Felony</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Violent_Felony]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Violent_Felony</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>877</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>19252</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Adult_Arrests_by_County___Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1970</statistic>
+                <statistic aggregation='Max' datatype='integer'>2013</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:County:nk]' type='palette'>
+            <map to='#17becf'>
+              <bucket>&quot;Genesee&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;Otsego&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;Warren&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;Albany&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;Hamilton&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;Queens&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;Wayne&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;Cattaraugus&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;Lewis&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;Saratoga&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;Erie&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;Ontario&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;Tompkins&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;Columbia&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;New York&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;Steuben&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;Chenango&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;Montgomery&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;Seneca&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;Cayuga&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;Livingston&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;Schenectady&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;Greene&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;Putnam&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;Allegany&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;Herkimer&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;Rensselaer&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;Westchester&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;Franklin&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;Orleans&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;Unknown NYC county&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;Cortland&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;Niagara&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;Suffolk&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;Clinton&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;Nassau&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;St. Lawrence&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;Essex&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;Orange&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;Ulster&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;Chautauqua&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;Madison&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;Schoharie&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;Fulton&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;Oswego&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;Unknown-NonNYS&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;Delaware&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;Oneida&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;Sullivan&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;Dutchess&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;Onondaga&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;Tioga&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;Bronx&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;Jefferson&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;Richmond&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;Wyoming&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;Chemung&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;Monroe&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;Schuyler&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;Broome&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;Kings&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;Rockland&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;Yates&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[textscan.42134.494191030100].[sum:Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[textscan.42134.494445729200].[sum:Firearm_Count:qk]&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;[textscan.42134.494191030100].[sum:Number_of_Children_Served:qk]&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;[textscan.42134.491632511600].[sum:Drug_Felony:qk]&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;[textscan.42134.517084178200].[sum:Drugs:qk]&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[textscan.42134.491632511600].[sum:DWI_Felony:qk]&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;[textscan.42134.494445729200].[sum:Population:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[textscan.42134.494319525500].[sum:Meal_Units_Served:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='textscan.42134.494191030100'>
+        <column datatype='integer' name='[Admissions]' role='measure' type='quantitative'>
+        </column>
+        <column caption='Number of Children Served' datatype='integer' name='[Number_of_Children_Served]' role='measure' type='quantitative'>
+        </column>
+        <column-instance column='[Admissions]' derivation='Sum' name='[sum:Admissions:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Number_of_Children_Served]' derivation='Sum' name='[sum:Number_of_Children_Served:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='textscan.42134.494319525500'>
+        <column caption='Meal Units Served' datatype='integer' name='[Meal_Units_Served]' role='measure' type='quantitative'>
+        </column>
+        <column-instance column='[Meal_Units_Served]' derivation='Sum' name='[sum:Meal_Units_Served:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='textscan.42134.494445729200'>
+        <column caption='Firearm Count' datatype='integer' name='[Firearm_Count]' role='measure' type='quantitative'>
+        </column>
+        <column datatype='integer' name='[Population]' role='measure' type='quantitative'>
+        </column>
+        <column-instance column='[Firearm_Count]' derivation='Sum' name='[sum:Firearm_Count:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Population]' derivation='Sum' name='[sum:Population:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+    </datasource>
     <datasource caption='Children_in_Foster_Care__by_County__Annually__Beginning_1994' inline='true' name='textscan.42134.494191030100' version='8.3'>
       <connection class='textscan' directory='/Users/bruno/Dropbox/CS 329 Data' filename='Children_in_Foster_Care__by_County__Annually__Beginning_1994.csv'>
         <relation name='Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv' table='[Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv]' type='table'>
@@ -28,6 +879,8 @@
             <column datatype='integer' name='Indicated_CPS_Reports' ordinal='16' />
           </columns>
         </relation>
+        <refresh increment-key='' incremental-updates='false'>
+        </refresh>
         <metadata-records>
           <metadata-record class='column'>
             <remote-name>County</remote-name>
@@ -339,6 +1192,432 @@
       <column datatype='integer' name='[Year]' role='dimension' type='quantitative'>
       </column>
       <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='/Users/bruno/Dropbox/UT Stuff/SP15/CS 329E/DataVisualization/DV_FinalProject/04 Tableau Workbooks/Children_in_Foster_Care__by_County__Annually__Beginning_1994.tde' schema='Extract' tablename='Extract' update-time='05/11/2015 08:43:36 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='1062' timestamp-start='2015-05-11 20:43:36.515' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Admissions</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Admissions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Admissions</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>329</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>12793</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Adoptive_Home</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Adoptive_Home]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Adoptive_Home</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>179</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>70307</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Agency_Operated_Boarding_Home</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Agency_Operated_Boarding_Home]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Agency_Operated_Boarding_Home</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>592</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>177640</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Approved_Relative_Home</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Approved_Relative_Home]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Approved_Relative_Home</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>735</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>7511293</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Children_In_Care</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Children_In_Care]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Children_In_Care</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>419</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>44859</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Albany&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;YATES&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Discharges</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Discharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Discharges</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>349</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>13803</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Foster_Boarding_Home</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Foster_Boarding_Home]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Foster_Boarding_Home</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1043</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>7625644</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Group_Home</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Group_Home]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Group_Home</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>874</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>544807</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Group_Residence</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Group_Residence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Group_Residence</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>594</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>183673</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Indicated_CPS_Reports</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Indicated_CPS_Reports]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Indicated_CPS_Reports</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>604</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>2</statistic>
+                <statistic aggregation='Max' datatype='integer'>24376</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Institution</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Institution]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Institution</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1020</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>891711</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>12</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number_of_Children_Served</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Number_of_Children_Served]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number_of_Children_Served</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>518</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>58143</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Other]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>723</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>161794</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supervised_Independent_Living</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Supervised_Independent_Living]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supervised_Independent_Living</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>183</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>35098</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Days_In_Care</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Total_Days_In_Care]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Days_In_Care</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1047</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>16908144</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Children_in_Foster_Care__by_County__Annually__Beginning_1994#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1994</statistic>
+                <statistic aggregation='Max' datatype='integer'>2011</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
       <style>
         <style-rule element='mark'>
@@ -688,6 +1967,8 @@
             <column datatype='string' name='Meal_Type' ordinal='4' />
           </columns>
         </relation>
+        <refresh increment-key='' incremental-updates='false'>
+        </refresh>
         <metadata-records>
           <metadata-record class='column'>
             <remote-name>NYSOFA_County_Code</remote-name>
@@ -809,6 +2090,173 @@
       <column datatype='integer' name='[Year]' role='dimension' type='quantitative'>
       </column>
       <column-instance column='[County_Name]' derivation='None' name='[none:County_Name:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='/Users/bruno/Dropbox/UT Stuff/SP15/CS 329E/DataVisualization/DV_FinalProject/04 Tableau Workbooks/Home_Delivered_Meals_Served__by_County__by_the_Office_for_the_Aging__Beginning_1974.tde' schema='Extract' tablename='Extract' update-time='05/11/2015 08:44:18 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='2260' timestamp-start='2015-05-11 20:44:18.202' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>County_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County_Name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Home_Delivered_Meals_Served__by_County__by_the_Office_for_the_Aging__Beginning_1974#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>59</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Albany&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Yates&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Meal_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Meal_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Meal_Type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Home_Delivered_Meals_Served__by_County__by_the_Office_for_the_Aging__Beginning_1974#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Home Delivered Meals&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Home Delivered Meals&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Meal_Units_Served</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Meal_Units_Served]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Meal_Units_Served</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Home_Delivered_Meals_Served__by_County__by_the_Office_for_the_Aging__Beginning_1974#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2238</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>6089634</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NYSOFA_County_Code</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[NYSOFA_County_Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NYSOFA_County_Code</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Home_Delivered_Meals_Served__by_County__by_the_Office_for_the_Aging__Beginning_1974#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>63</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>4</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Home_Delivered_Meals_Served__by_County__by_the_Office_for_the_Aging__Beginning_1974#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1974</statistic>
+                <statistic aggregation='Max' datatype='integer'>2012</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
       <style>
         <style-rule element='mark'>
@@ -978,6 +2426,8 @@
             <column datatype='real' name='Firearm_Rate' ordinal='10' />
           </columns>
         </relation>
+        <refresh increment-key='' incremental-updates='false'>
+        </refresh>
         <metadata-records>
           <metadata-record class='column'>
             <remote-name>County</remote-name>
@@ -1193,6 +2643,294 @@
       <column datatype='integer' name='[Year]' role='dimension' type='quantitative'>
       </column>
       <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='/Users/bruno/Dropbox/UT Stuff/SP15/CS 329E/DataVisualization/DV_FinalProject/04 Tableau Workbooks/Index__Violent__Property__and_Firearm_Rates_By_County__Beginning_1990.tde' schema='Extract' tablename='Extract' update-time='05/11/2015 08:44:34 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='1488' timestamp-start='2015-05-11 20:44:34.628' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Index__Violent__Property__and_Firearm_Rates_By_County__Beginning_1990#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Albany&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Yates&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Firearm_Count</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Firearm_Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Firearm_Count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Index__Violent__Property__and_Firearm_Rates_By_County__Beginning_1990#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>340</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>21878</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Firearm_Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Firearm_Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Firearm_Rate</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Index__Violent__Property__and_Firearm_Rates_By_County__Beginning_1990#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>562</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>948.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Index_Count</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Index_Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Index_Count</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Index__Violent__Property__and_Firearm_Rates_By_County__Beginning_1990#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1332</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>40</statistic>
+                <statistic aggregation='Max' datatype='integer'>217786</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Index_Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Index_Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Index_Rate</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Index__Violent__Property__and_Firearm_Rates_By_County__Beginning_1990#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1447</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>774.60000000000002</statistic>
+                <statistic aggregation='Max' datatype='real'>14651.1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>5</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Index__Violent__Property__and_Firearm_Rates_By_County__Beginning_1990#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1483</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>4768</statistic>
+                <statistic aggregation='Max' datatype='integer'>2586006</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Property_Count</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Property_Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Property_Count</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Index__Violent__Property__and_Firearm_Rates_By_County__Beginning_1990#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1332</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>35</statistic>
+                <statistic aggregation='Max' datatype='integer'>173352</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Property_Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Property_Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Property_Rate</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Index__Violent__Property__and_Firearm_Rates_By_County__Beginning_1990#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1451</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>695.0</statistic>
+                <statistic aggregation='Max' datatype='real'>11661.9</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Violent_Count</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Violent_Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Violent_Count</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Index__Violent__Property__and_Firearm_Rates_By_County__Beginning_1990#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>768</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>63087</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Violent_Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Violent_Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Violent_Rate</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Index__Violent__Property__and_Firearm_Rates_By_County__Beginning_1990#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1281</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>19.100000000000001</statistic>
+                <statistic aggregation='Max' datatype='real'>2989.1999999999998</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Index__Violent__Property__and_Firearm_Rates_By_County__Beginning_1990#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1990</statistic>
+                <statistic aggregation='Max' datatype='integer'>2013</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
       <style>
         <style-rule element='mark'>
@@ -1363,6 +3101,8 @@
             <column datatype='integer' name='Total' ordinal='8' />
           </columns>
         </relation>
+        <refresh increment-key='' incremental-updates='false'>
+        </refresh>
         <metadata-records>
           <metadata-record class='column'>
             <remote-name>County</remote-name>
@@ -1539,6 +3279,258 @@
       </column>
       <column datatype='integer' name='[Year]' role='dimension' type='quantitative'>
       </column>
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='/Users/bruno/Dropbox/UT Stuff/SP15/CS 329E/DataVisualization/DV_FinalProject/04 Tableau Workbooks/Sentences_to_Probation_by_Year__Beginning_1970.tde' schema='Extract' tablename='Extract' update-time='05/11/2015 08:44:48 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='5456' timestamp-start='2015-05-11 20:44:48.612' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Conviction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Conviction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Conviction</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sentences_to_Probation_by_Year__Beginning_1970#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Felony&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Misdemeanor&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sentences_to_Probation_by_Year__Beginning_1970#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>62</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Albany&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Yates&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DWI</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[DWI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DWI</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sentences_to_Probation_by_Year__Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>342</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>1607</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Drugs</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Drugs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Drugs</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sentences_to_Probation_by_Year__Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>394</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>2470</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>4</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Other]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sentences_to_Probation_by_Year__Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>547</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>1245</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Property</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Property]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Property</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sentences_to_Probation_by_Year__Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>534</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>1787</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sentences_to_Probation_by_Year__Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1057</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>4603</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Violent_Felony_Offenses_VFO</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Violent_Felony_Offenses_VFO]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Violent_Felony_Offenses_VFO</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sentences_to_Probation_by_Year__Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>283</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>1410</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sentences_to_Probation_by_Year__Beginning_1970#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1970</statistic>
+                <statistic aggregation='Max' datatype='integer'>2013</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
@@ -1569,6 +3561,8 @@
             <column datatype='real' name='Lon' ordinal='18' />
           </columns>
         </relation>
+        <refresh increment-key='' incremental-updates='false'>
+        </refresh>
         <metadata-records>
           <metadata-record class='column'>
             <remote-name>LOCATION_CODE</remote-name>
@@ -1969,538 +3963,573 @@
       </column>
       <column caption='Zip Code' datatype='integer' default-format='*00000' name='[ZIP_CODE]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal'>
       </column>
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='/Users/bruno/Dropbox/UT Stuff/SP15/CS 329E/DataVisualization/DV_FinalProject/04 Tableau Workbooks/Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2.tde' schema='Extract' tablename='Extract' update-time='05/11/2015 08:44:57 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='3270' timestamp-start='2015-05-11 20:44:57.558' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>AREA_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AREA_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AREA_NAME</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>745</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;ADDISON CENTRAL SCHOOL&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;YORKTOWN CENTRAL SCHOOL&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>9</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AREA_TYPE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AREA_TYPE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AREA_TYPE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;COUNTY&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;STATEWIDE (EXCLUDING NYC)&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CITY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CITY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CITY</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>637</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;ACCORD&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;YOUNGSTOWN&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>6</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COUNTY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTY</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>59</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;ALBANY&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;YATES&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>5</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GRADE_LEVEL</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GRADE_LEVEL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GRADE_LEVEL</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;DISTRICT TOTAL&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;MIDDLE/HIGH&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LOCATION_CODE</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[LOCATION_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LOCATION_CODE</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>745</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>700000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lat</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1070</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>40.587697589999998</statistic>
+                <statistic aggregation='Max' datatype='real'>44.990699999999997</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lon</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lon</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1077</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>-79.711399999999998</statistic>
+                <statistic aggregation='Max' datatype='real'>-71.958190880000004</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NO_OBESE</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[NO_OBESE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NO_OBESE</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>496</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>5</statistic>
+                <statistic aggregation='Max' datatype='integer'>84578</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NO_OVERWEIGHT</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[NO_OVERWEIGHT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NO_OVERWEIGHT</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>471</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>5</statistic>
+                <statistic aggregation='Max' datatype='integer'>77813</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NO_OVERWEIGHT_OR_OBESE</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[NO_OVERWEIGHT_OR_OBESE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NO_OVERWEIGHT_OR_OBESE</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>708</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>5</statistic>
+                <statistic aggregation='Max' datatype='integer'>162391</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>11</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PCT_OBESE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PCT_OBESE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PCT_OBESE</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>323</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.012999999999999999</statistic>
+                <statistic aggregation='Max' datatype='real'>1.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PCT_OVERWEIGHT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PCT_OVERWEIGHT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PCT_OVERWEIGHT</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>244</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.016</statistic>
+                <statistic aggregation='Max' datatype='real'>1.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PCT_OVERWEIGHT_OR_OBESE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PCT_OVERWEIGHT_OR_OBESE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PCT_OVERWEIGHT_OR_OBESE</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.040000000000000001</statistic>
+                <statistic aggregation='Max' datatype='real'>1.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>REGION</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[REGION]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>REGION</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;CENTRAL NEW YORK&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;WESTERN NEW YORK&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SCHOOL_YEARS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SCHOOL_YEARS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SCHOOL_YEARS</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;2012&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;2013&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STATE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[STATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STATE</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;NY&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;NY&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STREET_ADDRESS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[STREET_ADDRESS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STREET_ADDRESS</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>694</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;1 ACADEMY ST&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;S 5120 ORCHARD AVE&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ZIP_CODE</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[ZIP_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ZIP_CODE</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Student_Weight_Status_Category_Reporting_Results__Beginning_2010_MOD2#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>644</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>6390</statistic>
+                <statistic aggregation='Max' datatype='integer'>14905</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>7</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
-    </datasource>
-    <datasource caption='Adult_Arrests_by_County___Beginning_1970' inline='true' name='textscan.42134.491632511600' version='8.3'>
-      <connection class='textscan' directory='/Users/bruno/Dropbox/CS 329 Data' filename='Adult_Arrests_by_County___Beginning_1970.csv'>
-        <relation name='Adult_Arrests_by_County___Beginning_1970#csv' table='[Adult_Arrests_by_County___Beginning_1970#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='string' name='County' ordinal='0' />
-            <column datatype='integer' name='Year' ordinal='1' />
-            <column datatype='integer' name='Total' ordinal='2' />
-            <column datatype='integer' name='Felony_Total' ordinal='3' />
-            <column datatype='integer' name='Drug_Felony' ordinal='4' />
-            <column datatype='integer' name='Violent_Felony' ordinal='5' />
-            <column datatype='integer' name='DWI_Felony' ordinal='6' />
-            <column datatype='integer' name='Other_Felony' ordinal='7' />
-            <column datatype='integer' name='Misdemeanor_Total' ordinal='8' />
-            <column datatype='integer' name='Drug_Misd' ordinal='9' />
-            <column datatype='integer' name='DWI_Misd' ordinal='10' />
-            <column datatype='integer' name='Property_Misd' ordinal='11' />
-            <column datatype='integer' name='Other_Misd' ordinal='12' />
-          </columns>
-        </relation>
-        <metadata-records>
-          <metadata-record class='column'>
-            <remote-name>County</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[County]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>County</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
-              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Year</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Year]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>Year</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Total</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Total]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>Total</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Felony_Total</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Felony_Total]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>Felony_Total</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Drug_Felony</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Drug_Felony]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>Drug_Felony</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Violent_Felony</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Violent_Felony]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>Violent_Felony</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>DWI_Felony</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[DWI_Felony]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>DWI_Felony</remote-alias>
-            <ordinal>6</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Other_Felony</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Other_Felony]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>Other_Felony</remote-alias>
-            <ordinal>7</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Misdemeanor_Total</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Misdemeanor_Total]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>Misdemeanor_Total</remote-alias>
-            <ordinal>8</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Drug_Misd</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Drug_Misd]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>Drug_Misd</remote-alias>
-            <ordinal>9</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>DWI_Misd</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[DWI_Misd]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>DWI_Misd</remote-alias>
-            <ordinal>10</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Property_Misd</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Property_Misd]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>Property_Misd</remote-alias>
-            <ordinal>11</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Other_Misd</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Other_Misd]</local-name>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias>Other_Misd</remote-alias>
-            <ordinal>12</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='capability'>
-            <remote-name></remote-name>
-            <remote-type>0</remote-type>
-            <parent-name>[Adult_Arrests_by_County___Beginning_1970#csv]</parent-name>
-            <remote-alias></remote-alias>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='record-delimiter'>&quot;\\r&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
-      </column>
-      <column caption='DWI Felony' datatype='integer' name='[DWI_Felony]' role='measure' type='quantitative'>
-      </column>
-      <column caption='DWI Misd' datatype='integer' name='[DWI_Misd]' role='measure' type='quantitative'>
-      </column>
-      <column caption='Drug Felony' datatype='integer' name='[Drug_Felony]' role='measure' type='quantitative'>
-      </column>
-      <column caption='Drug Misd' datatype='integer' name='[Drug_Misd]' role='measure' type='quantitative'>
-      </column>
-      <column caption='Felony Total' datatype='integer' name='[Felony_Total]' role='measure' type='quantitative'>
-      </column>
-      <column caption='Misdemeanor Total' datatype='integer' name='[Misdemeanor_Total]' role='measure' type='quantitative'>
-      </column>
-      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
-        <calculation class='tableau' formula='1' />
-      </column>
-      <column caption='Other Felony' datatype='integer' name='[Other_Felony]' role='measure' type='quantitative'>
-      </column>
-      <column caption='Other Misd' datatype='integer' name='[Other_Misd]' role='measure' type='quantitative'>
-      </column>
-      <column caption='Property Misd' datatype='integer' name='[Property_Misd]' role='measure' type='quantitative'>
-      </column>
-      <column caption='Violent Felony' datatype='integer' name='[Violent_Felony]' role='measure' type='quantitative'>
-      </column>
-      <column datatype='integer' name='[Year]' role='dimension' type='quantitative'>
-      </column>
-      <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
-      <column-instance column='[DWI_Felony]' derivation='Sum' name='[sum:DWI_Felony:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[Drug_Felony]' derivation='Sum' name='[sum:Drug_Felony:qk]' pivot='key' type='quantitative' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:County:nk]' type='palette'>
-            <map to='#17becf'>
-              <bucket>&quot;Genesee&quot;</bucket>
-            </map>
-            <map to='#17becf'>
-              <bucket>&quot;Otsego&quot;</bucket>
-            </map>
-            <map to='#17becf'>
-              <bucket>&quot;Warren&quot;</bucket>
-            </map>
-            <map to='#1f77b4'>
-              <bucket>%null%</bucket>
-            </map>
-            <map to='#1f77b4'>
-              <bucket>&quot;Albany&quot;</bucket>
-            </map>
-            <map to='#1f77b4'>
-              <bucket>&quot;Hamilton&quot;</bucket>
-            </map>
-            <map to='#1f77b4'>
-              <bucket>&quot;Queens&quot;</bucket>
-            </map>
-            <map to='#1f77b4'>
-              <bucket>&quot;Wayne&quot;</bucket>
-            </map>
-            <map to='#2ca02c'>
-              <bucket>&quot;Cattaraugus&quot;</bucket>
-            </map>
-            <map to='#2ca02c'>
-              <bucket>&quot;Lewis&quot;</bucket>
-            </map>
-            <map to='#2ca02c'>
-              <bucket>&quot;Saratoga&quot;</bucket>
-            </map>
-            <map to='#7f7f7f'>
-              <bucket>&quot;Erie&quot;</bucket>
-            </map>
-            <map to='#7f7f7f'>
-              <bucket>&quot;Ontario&quot;</bucket>
-            </map>
-            <map to='#7f7f7f'>
-              <bucket>&quot;Tompkins&quot;</bucket>
-            </map>
-            <map to='#8c564b'>
-              <bucket>&quot;Columbia&quot;</bucket>
-            </map>
-            <map to='#8c564b'>
-              <bucket>&quot;New York&quot;</bucket>
-            </map>
-            <map to='#8c564b'>
-              <bucket>&quot;Steuben&quot;</bucket>
-            </map>
-            <map to='#9467bd'>
-              <bucket>&quot;Chenango&quot;</bucket>
-            </map>
-            <map to='#9467bd'>
-              <bucket>&quot;Montgomery&quot;</bucket>
-            </map>
-            <map to='#9467bd'>
-              <bucket>&quot;Seneca&quot;</bucket>
-            </map>
-            <map to='#98df8a'>
-              <bucket>&quot;Cayuga&quot;</bucket>
-            </map>
-            <map to='#98df8a'>
-              <bucket>&quot;Livingston&quot;</bucket>
-            </map>
-            <map to='#98df8a'>
-              <bucket>&quot;Schenectady&quot;</bucket>
-            </map>
-            <map to='#9edae5'>
-              <bucket>&quot;Greene&quot;</bucket>
-            </map>
-            <map to='#9edae5'>
-              <bucket>&quot;Putnam&quot;</bucket>
-            </map>
-            <map to='#9edae5'>
-              <bucket>&quot;Washington&quot;</bucket>
-            </map>
-            <map to='#aec7e8'>
-              <bucket>&quot;Allegany&quot;</bucket>
-            </map>
-            <map to='#aec7e8'>
-              <bucket>&quot;Herkimer&quot;</bucket>
-            </map>
-            <map to='#aec7e8'>
-              <bucket>&quot;Rensselaer&quot;</bucket>
-            </map>
-            <map to='#aec7e8'>
-              <bucket>&quot;Westchester&quot;</bucket>
-            </map>
-            <map to='#bcbd22'>
-              <bucket>&quot;Franklin&quot;</bucket>
-            </map>
-            <map to='#bcbd22'>
-              <bucket>&quot;Orleans&quot;</bucket>
-            </map>
-            <map to='#bcbd22'>
-              <bucket>&quot;Unknown NYC county&quot;</bucket>
-            </map>
-            <map to='#c49c94'>
-              <bucket>&quot;Cortland&quot;</bucket>
-            </map>
-            <map to='#c49c94'>
-              <bucket>&quot;Niagara&quot;</bucket>
-            </map>
-            <map to='#c49c94'>
-              <bucket>&quot;Suffolk&quot;</bucket>
-            </map>
-            <map to='#c5b0d5'>
-              <bucket>&quot;Clinton&quot;</bucket>
-            </map>
-            <map to='#c5b0d5'>
-              <bucket>&quot;Nassau&quot;</bucket>
-            </map>
-            <map to='#c5b0d5'>
-              <bucket>&quot;St. Lawrence&quot;</bucket>
-            </map>
-            <map to='#c7c7c7'>
-              <bucket>&quot;Essex&quot;</bucket>
-            </map>
-            <map to='#c7c7c7'>
-              <bucket>&quot;Orange&quot;</bucket>
-            </map>
-            <map to='#c7c7c7'>
-              <bucket>&quot;Ulster&quot;</bucket>
-            </map>
-            <map to='#d62728'>
-              <bucket>&quot;Chautauqua&quot;</bucket>
-            </map>
-            <map to='#d62728'>
-              <bucket>&quot;Madison&quot;</bucket>
-            </map>
-            <map to='#d62728'>
-              <bucket>&quot;Schoharie&quot;</bucket>
-            </map>
-            <map to='#dbdb8d'>
-              <bucket>&quot;Fulton&quot;</bucket>
-            </map>
-            <map to='#dbdb8d'>
-              <bucket>&quot;Oswego&quot;</bucket>
-            </map>
-            <map to='#dbdb8d'>
-              <bucket>&quot;Unknown-NonNYS&quot;</bucket>
-            </map>
-            <map to='#e377c2'>
-              <bucket>&quot;Delaware&quot;</bucket>
-            </map>
-            <map to='#e377c2'>
-              <bucket>&quot;Oneida&quot;</bucket>
-            </map>
-            <map to='#e377c2'>
-              <bucket>&quot;Sullivan&quot;</bucket>
-            </map>
-            <map to='#f7b6d2'>
-              <bucket>&quot;Dutchess&quot;</bucket>
-            </map>
-            <map to='#f7b6d2'>
-              <bucket>&quot;Onondaga&quot;</bucket>
-            </map>
-            <map to='#f7b6d2'>
-              <bucket>&quot;Tioga&quot;</bucket>
-            </map>
-            <map to='#ff7f0e'>
-              <bucket>&quot;Bronx&quot;</bucket>
-            </map>
-            <map to='#ff7f0e'>
-              <bucket>&quot;Jefferson&quot;</bucket>
-            </map>
-            <map to='#ff7f0e'>
-              <bucket>&quot;Richmond&quot;</bucket>
-            </map>
-            <map to='#ff7f0e'>
-              <bucket>&quot;Wyoming&quot;</bucket>
-            </map>
-            <map to='#ff9896'>
-              <bucket>&quot;Chemung&quot;</bucket>
-            </map>
-            <map to='#ff9896'>
-              <bucket>&quot;Monroe&quot;</bucket>
-            </map>
-            <map to='#ff9896'>
-              <bucket>&quot;Schuyler&quot;</bucket>
-            </map>
-            <map to='#ffbb78'>
-              <bucket>&quot;Broome&quot;</bucket>
-            </map>
-            <map to='#ffbb78'>
-              <bucket>&quot;Kings&quot;</bucket>
-            </map>
-            <map to='#ffbb78'>
-              <bucket>&quot;Rockland&quot;</bucket>
-            </map>
-            <map to='#ffbb78'>
-              <bucket>&quot;Yates&quot;</bucket>
-            </map>
-          </encoding>
-          <encoding attr='color' field='[:Measure Names]' type='palette'>
-            <map to='#1f77b4'>
-              <bucket>&quot;[textscan.42134.494191030100].[sum:Admissions:qk]&quot;</bucket>
-            </map>
-            <map to='#2ca02c'>
-              <bucket>&quot;[textscan.42134.494445729200].[sum:Firearm_Count:qk]&quot;</bucket>
-            </map>
-            <map to='#7f7f7f'>
-              <bucket>&quot;[textscan.42134.494191030100].[sum:Number_of_Children_Served:qk]&quot;</bucket>
-            </map>
-            <map to='#8c564b'>
-              <bucket>&quot;[textscan.42134.491632511600].[sum:Drug_Felony:qk]&quot;</bucket>
-            </map>
-            <map to='#9467bd'>
-              <bucket>&quot;[textscan.42134.517084178200].[sum:Drugs:qk]&quot;</bucket>
-            </map>
-            <map to='#d62728'>
-              <bucket>&quot;[textscan.42134.491632511600].[sum:DWI_Felony:qk]&quot;</bucket>
-            </map>
-            <map to='#e377c2'>
-              <bucket>&quot;[textscan.42134.494445729200].[sum:Population:qk]&quot;</bucket>
-            </map>
-            <map to='#ff7f0e'>
-              <bucket>&quot;[textscan.42134.494319525500].[sum:Meal_Units_Served:qk]&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <datasource-dependencies datasource='textscan.42134.494191030100'>
-        <column datatype='integer' name='[Admissions]' role='measure' type='quantitative'>
-        </column>
-        <column caption='Number of Children Served' datatype='integer' name='[Number_of_Children_Served]' role='measure' type='quantitative'>
-        </column>
-        <column-instance column='[Admissions]' derivation='Sum' name='[sum:Admissions:qk]' pivot='key' type='quantitative' />
-        <column-instance column='[Number_of_Children_Served]' derivation='Sum' name='[sum:Number_of_Children_Served:qk]' pivot='key' type='quantitative' />
-      </datasource-dependencies>
-      <datasource-dependencies datasource='textscan.42134.494319525500'>
-        <column caption='Meal Units Served' datatype='integer' name='[Meal_Units_Served]' role='measure' type='quantitative'>
-        </column>
-        <column-instance column='[Meal_Units_Served]' derivation='Sum' name='[sum:Meal_Units_Served:qk]' pivot='key' type='quantitative' />
-      </datasource-dependencies>
-      <datasource-dependencies datasource='textscan.42134.494445729200'>
-        <column caption='Firearm Count' datatype='integer' name='[Firearm_Count]' role='measure' type='quantitative'>
-        </column>
-        <column datatype='integer' name='[Population]' role='measure' type='quantitative'>
-        </column>
-        <column-instance column='[Firearm_Count]' derivation='Sum' name='[sum:Firearm_Count:qk]' pivot='key' type='quantitative' />
-        <column-instance column='[Population]' derivation='Sum' name='[sum:Population:qk]' pivot='key' type='quantitative' />
-      </datasource-dependencies>
-      <datasource-dependencies datasource='textscan.42134.517084178200'>
-        <column datatype='integer' name='[Drugs]' role='measure' type='quantitative'>
-        </column>
-        <column-instance column='[Drugs]' derivation='Sum' name='[sum:Drugs:qk]' pivot='key' type='quantitative' />
-      </datasource-dependencies>
     </datasource>
   </datasources>
   <datasource-relationships>
@@ -3228,7 +5257,7 @@
   </worksheets>
   <windows>
     <window class='schema' source-height='-1' />
-    <window auto-hidden='0' class='worksheet' maximized='0' name='Children vs Crimes'>
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Children vs Crimes'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -3330,7 +5359,7 @@
         </color-one-way>
       </highlight>
     </window>
-    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 2'>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Sheet 2'>
       <cards>
         <edge name='left'>
           <strip size='160'>
