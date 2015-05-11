@@ -180,6 +180,10 @@ For our final plot, we made another calculated field, this time to calculate the
 
 In order to spice up our data even further, we decided to incorporate data from other databases to our current plots. We added a database on the number of home delivered meals to elderly people in NY, as well as statistics on foster care in NY. The following two plots illustrate this data being blended with some of our previous data sources.
 
+The plot shown below illustrates the number of meals served per county per year for all of the counties in New York. That is, every county gets their own "bubble" for each year, and the bubbles are color coded by counties. It is clear from the data that although New York City is not the most populous county, it delivers the most meals to elderly people year after year.
+
 ![](./sheet12.png)
+
+This next plot show the relationship between different crime counts and the number of children in foster care across different counties for different years. Although there is much spread in the data, it can be seen that there is a rought linear relationship between the different crimes and the children in foster care.
 
 ![](./sheet13.png)
