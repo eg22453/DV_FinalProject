@@ -8,23 +8,13 @@ CS 329E Data Visualization - DV_FinalProject
 **Authors: Bruno De Hoyos (bd8739), Estevan Garza (eg22453)**
 
 
+###Importing data
+
+
 We begin by importing some useful libraries:
 
 ```{r, warning=FALSE}
-require(bitops)
-require(stats)
-require(ggplot2)
-require(grid)
-require(plyr)
-require(reshape2)
-require(RCurl)
-require(gplots)
-require(tidyr)
-require(dplyr)
-require(jsonlite)
-require("scatterplot3d")
-require("rgl")
-require("RColorBrewer")
+source("../01 Data/lib.R", max.deparse.length=1e3)
 ```
 
 We now begin building our data frames. We build the data frames through the data.frame() function, and pass to it a URL to an OracleCloud server with an appropriate SQL query. In this case we query the tables “TYPE_CRIMES_BY_COUNTY”, "SENTENCES_TO_PROBATION_BY_YEAR","ADULT_ARRESTS_BY_COUNTY", and "weight3"  which we have already imported into the Oracle database, and and rename the dataframes 'dft', 'dfs',  and 'dfr' respectively.
@@ -69,19 +59,22 @@ The next and most complex wrangling procedure involves selecting various crime r
 source("../02 Data Wrangling/Wrangle3.R", echo = TRUE, max.deparse.length=1e3)
 ```
 
-**Now we implement the first of our data wrangling for the student obesity table and through use of the pipe operators, filter, mutate and cumulative distribution functions, produce a new data frame with a new variable, "owobpct". This variable ranks each individual school district level (not the DISTRICT_TOTAL numbers however which have been filtered out using the != operator) in orders of percentiles concerning overweight OR obese students.**
+Now we implement the first of our data wrangling for the student obesity table and through use of the pipe operators, filter, mutate and cumulative distribution functions, produce a new data frame with a new variable, "owobpct". This variable ranks each individual school district level (not the DISTRICT_TOTAL numbers however which have been filtered out using the != operator) in orders of percentiles concerning overweight OR obese students.
+
 ```{r}
 source("../02 Data Wrangling/student_wrangle1.R", echo = TRUE, max.deparse.length=1e3)
 ```
 
 
-**The next step of this data wrangling process expands on the first by filtering the table further. In this data frame the STATEWIDE region is not included and the top ten percentile of districts with the most overweight or obese students are not included. **
+The next step of this data wrangling process expands on the first by filtering the table further. In this data frame the STATEWIDE region is not included and the top ten percentile of districts with the most overweight or obese students are not included.
+
 ```{r}
 source("../02 Data Wrangling/student_wrangle2.R", echo = TRUE, max.deparse.length=1e3)
 ```
 
 
-**The final wrangling procedure involves filtering out the top ten percentile of 'Number of Overweight or Obese', region 'Statewide', and grade level 'District total'. Then we use a group_by function that groups 'City' and ‘Region' together and obtains the mean value of 'Percent Overweight or Obese' based on the groupings.**
+The final wrangling procedure involves filtering out the top ten percentile of 'Number of Overweight or Obese', region 'Statewide', and grade level 'District total'. Then we use a group_by function that groups 'City' and ‘Region' together and obtains the mean value of 'Percent Overweight or Obese' based on the groupings.
+
 ```{r}
 source("../02 Data Wrangling/student_wrangle3.R", echo = TRUE, max.deparse.length=1e3)
 ```
@@ -108,25 +101,28 @@ source("../03 Visualizations/Plot3.R", echo = TRUE, max.deparse.length=1e3)
 ```
 
 
-**Next we plot a geometric point graph that shows the relationship between the number of obese children and number of overweight children in both elementary and middle/high schools.**
+Next we plot a geometric point graph that shows the relationship between the number of obese children and number of overweight children in both elementary and middle/high schools.
+
 ```{r, warning=F}
 source("../03 Visualizations/plot1student.R", echo = TRUE, max.deparse.length=1e3)
 ```
 
-**It's interesting to see that elementary schools, although on average having less of each, have more more "outliers" in the data set. This could be attributed to the restirictions of school sports in elemenary schools or some other unobservable factor(s)**
+It's interesting to see that elementary schools, although on average having less of each, have more more "outliers" in the data set. This could be attributed to the restirictions of school sports in elemenary schools or some other unobservable factor(s).
 
 ```{r}
 source("../03 Visualizations/plot3student.R", echo = TRUE, max.deparse.length=1e3)
 ```
 
-**Plotting the individal lat and long coordinates on point graph we are able to see that the data set was taken from all over the state of New York in a relatively thourough study. The outline of each graph is the obvious form of the state itself. Furthermore we are able to deduce from the graph(s) 2 things.**
+Plotting the individal lat and long coordinates on point graph we are able to see that the data set was taken from all over the state of New York in a relatively thourough study. The outline of each graph is the obvious form of the state itself. Furthermore we are able to deduce from the graph(s) 2 things.
 
-**1. Although being overweight or obese was generally seen in all parts of the state there was still a correlation with higher percentages( >.4) in the norther half of New York**
+1. Although being overweight or obese was generally seen in all parts of the state there was still a correlation with higher percentages( >.4) in the norther half of New York
 
-**2. Between 2012 and 2013 the states' school districts saw a significant decrease in the amount of overweight or obese students.**
+2. Between 2012 and 2013 the states' school districts saw a significant decrease in the amount of overweight or obese students.
 
+##Using Tableau
 
-##Importing data to Tableau
+###Importing data to Tableau
+
 We begin by importing the data to Tableau. Since both of our data tables were previously stored in an Oracle database during an earlier project, we use Tableau's "Connect to Data" wizard by selecting Oracle in the sidebar. Our data can be accessed by using the following credentials:
 
 ```
@@ -178,5 +174,12 @@ For our third plot, we decided to visualize crime parameters for all of the diff
 
 For our final plot, we made another calculated field, this time to calculate the ratio of the number of drug felonies to the number of drug misdemeanors, for each county. The calculation was done very similar to the ones under Blend 2, with just a simple division of two sums. We plotted this ratio for all of the different counties using a bar graph, and colored the bars according to their value. If the ratio was over 1, the bars would be red, and anything else would be green. In addition, we adjusted the width of the bars according to the total number of crime sentences for that respective county. Surprisingly, we found that the counties with red bars (that is, more felonies than misdemeanors) were also counties with thin bars (meaning a low number of crime sentences). This seems a little counterintuitive, but there are some exceptions to every case.
 
-
 ![](./sheet11.png)
+
+##More Data Sources
+
+In order to spice up our data even further, we decided to incorporate data from other databases to our current plots. We added a database on the number of home delivered meals to elderly people in NY, as well as statistics on foster care in NY. The following two plots illustrate this data being blended with some of our previous data sources.
+
+![](./sheet12.png)
+
+![](./sheet13.png)
