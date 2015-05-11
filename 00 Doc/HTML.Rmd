@@ -63,19 +63,19 @@ The second wrangling procedure makes use of the mutate function and adds a new c
 source("../02 Data Wrangling/Wrangle2.R", echo = TRUE, max.deparse.length=1e3)
 ```
 
-The final and most complex wrangling procedure involves selecting various crime related columns (which including different variations of felony and misdemeanor crimes), groups them by year, and summarises the mean for each crime column. We utilize the melt function introduced at the beginning of the semester in order to stack the respective column data on top of each other, which all share the YEAR column.
+The next and most complex wrangling procedure involves selecting various crime related columns (which including different variations of felony and misdemeanor crimes), groups them by year, and summarises the mean for each crime column. We utilize the melt function introduced at the beginning of the semester in order to stack the respective column data on top of each other, which all share the YEAR column.
 
 ```{r}
 source("../02 Data Wrangling/Wrangle3.R", echo = TRUE, max.deparse.length=1e3)
 ```
 
-**Now we implement the first of our data wrangling and, through use of the pipe operators, filter, mutate and cumulative distribution functions, produce a new data frame with a new variable, "owobpct". This variable ranks each individual school district level (not the DISTRICT_TOTAL numbers however which have been filtered out using the != operator) in orders of percentiles concerning overweight OR obese students.**
+**Now we implement the first of our data wrangling for the student obesity table and through use of the pipe operators, filter, mutate and cumulative distribution functions, produce a new data frame with a new variable, "owobpct". This variable ranks each individual school district level (not the DISTRICT_TOTAL numbers however which have been filtered out using the != operator) in orders of percentiles concerning overweight OR obese students.**
 ```{r}
 source("../02 Data Wrangling/student_wrangle1.R", echo = TRUE, max.deparse.length=1e3)
 ```
 
 
-**The second step of the data wrangling process expands on the first by filtering the table further. In this data frame the STATEWIDE region is not included and the top ten percentile of districts with the most overweight or obese students are not included. **
+**The next step of this data wrangling process expands on the first by filtering the table further. In this data frame the STATEWIDE region is not included and the top ten percentile of districts with the most overweight or obese students are not included. **
 ```{r}
 source("../02 Data Wrangling/student_wrangle2.R", echo = TRUE, max.deparse.length=1e3)
 ```
